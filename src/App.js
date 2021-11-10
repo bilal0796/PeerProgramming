@@ -1,25 +1,17 @@
 import logo from './logo.svg';
 import './App.css';
-
+import 'bootstrap/dist/css/bootstrap.min.css'
+import WarningSign from './Components/WarningSign';
+import Mybadge from './Components/MyBadge';
+import SingleBook from './Components/SingleBook';
+import booksdata from './Data/SciFi.json'
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  return (<>
+   <WarningSign inputString='Peerprogramming'/> 
+   <Mybadge string2='strive' color='danger' />
+   <SingleBook booksdata/>
+  </>)
+
 }
 
 export default App;
