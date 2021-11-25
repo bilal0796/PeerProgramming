@@ -8,14 +8,14 @@ import booksdata from './Data/SciFi.json'
 import BookList from './Components/Booklist';
 
 function App() {
-  return (<>
+  return (
    <div className='container' >
    <WarningSign inputString='Peerprogramming'/> 
    <Mybadge string2='strive' color='danger' />
    <SingleBook book={booksdata[0]} />
    <BookList books={booksdata} />
    </div>
-  </>)
+  )
 }
 
 export default App;
